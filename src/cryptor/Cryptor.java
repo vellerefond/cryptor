@@ -418,6 +418,11 @@ public class Cryptor {
 			cipherOutputStream.write(input, 0, inputLengthRead);
 		}
 		
+		for (int i = 0; i < input.length; i++)
+			input[i] = Byte.MIN_VALUE;
+		
+		input = null;
+		
 		try {
 			inputStream.close();
 			cipherOutputStream.close();
@@ -487,6 +492,7 @@ public class Cryptor {
 		for (byte[] ivMaterial : ivMaterialChain) {
 			for (int i = 0; i < ivMaterial.length; i++)
 				ivMaterial[i] = Byte.MIN_VALUE;
+			
 			ivMaterial = null;
 		}
 		
