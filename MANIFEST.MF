@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Sealed: true
+Class-Path: lib/bcprov-jdk15on-151.jar
+Main-Class: cryptor.Cryptor
