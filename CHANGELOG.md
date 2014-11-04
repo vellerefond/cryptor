@@ -1,1 +1,1 @@
-###### 1.0.0 - First release of cryptor
+###### 1.0.0 - cryptor v1.0.0
