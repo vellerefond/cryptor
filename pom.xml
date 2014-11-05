@@ -34,6 +34,15 @@
     <build>
         <plugins>
             <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                    <compilerArgument></compilerArgument>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>2.5</version>
@@ -56,7 +65,7 @@
                             <goal>copy</goal>
                         </goals>
                         <configuration>
-                            <sourceFile>target/cryptor-${pom.version}.jar</sourceFile>
+                            <sourceFile>target/cryptor-${project.version}.jar</sourceFile>
                             <destinationFile>dist/cryptor.jar</destinationFile>
                         </configuration>
                     </execution>
